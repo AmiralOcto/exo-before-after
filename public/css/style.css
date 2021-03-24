@@ -1,10 +1,75 @@
+body {
+    position: absolute;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
 
+/* Exo 1 */
+#exo1{
+    position:fixed;
+    top: 0px;
+}
+#exo1:hover::after {
+    content:'';
+    display: block;
+    border-bottom: chocolate solid 5px;
+    animation: born 3s;
+}
+@keyframes born {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
 /* fin Exo 1 */
 
 /* Exo 2 */
-
+#exo2{
+    position:fixed;
+    top: 50px;
+}
+#exo2:hover::after {
+    content:'';
+    display: block;
+    height: ;
+    border-bottom: chocolate solid 5px;
+    animation: open 3s;
+}
+@keyframes open {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
 /* fin Exo 2 */
 
 /* Exo 3 */
+#exo3{
+    position:fixed;
+    top: 100px;
+}
+#exo3:hover::after {
+    content:'';
+    display: block;
+    border-bottom: chocolate solid 5px;
+    animation: rise 3s;
+    z-index: -1;
+    transition: height 2s;
+}
+@keyframes rise {
+    0% {
+        top: 0px;
+        height: 0px;
+    }
+    100% {
 
+        top: -28px;
+    }
+}
 /* fin Exo 3 */

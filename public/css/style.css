@@ -32,7 +32,6 @@ h1 {
 #exo2:hover::after {
     content:'';
     display: block;
-    height: ;
     border-bottom: chocolate solid 5px;
     animation: open 2s;
 }
@@ -54,10 +53,11 @@ h1 {
 #exo3:hover::after {
     content:'';
     display: block;
-    border-bottom: chocolate solid 5px;
+    background-color: chocolate;
     animation: rise 2s;
     z-index: -1;
     position: relative;
+    width: 100%;
 }
 @keyframes rise {
     0% {
@@ -65,8 +65,8 @@ h1 {
         height: 0px;
     }
     100% {
-        
-        top: -32px;
+        top: -27px;
+        height: 27px;
     }
 }
 /* fin Exo 3 */
